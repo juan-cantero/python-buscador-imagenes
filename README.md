@@ -1,18 +1,28 @@
 # Buscador de imágenes
 
-## Lo que deberían hacer
+Esta es una versión preliminar del enunciado de TP. La idea es que se familiaricen con la API de Pixabay y puedan verla funcionando en su entorno.
 
-1. Escribir los términos para buscar.
-2. Bajar una determinada cantidad de imágenes.
-3. Procesarlas de alguna manera.
-4. Guardar el resultado.
+## Pasos a seguir
 
-## Iteraciones
+1. Crearse una cuenta en Pixabay.
+1. Obtener el API key desde la [página de la documentación](https://pixabay.com/api/docs/#api_search_images).
+1. Agregar la API key al código y ejecutarlo.
+1. Modificar el código para que la bajada de imágenes se haga en threads distintos.
+1. Parametrizar la query y la cantidad de imágenes, para poder cambiarlo desde la consola.
 
-1. Descargar la primera imagen del resultado, procesarla y guardarla.
-1. Lo mismo pero usando threads.
-1. Descargar todas las imágenes del resultado, procesarlas y guardarlas.
-1. Hacer un compilado con todas las imágenes ya procesadas.
+Ejemplo de lo último:
+
+```python
+import sys
+
+nombre = sys.argv[1]
+edad = sys.argv[2]
+
+print(f'¡Hola {nombre}! Tenés {edad} años...')
+
+# > python3 main.py Marcos 34 
+# ¡Hola Marcos! Tenés 34 años...
+```
 
 ## Links útiles
 
